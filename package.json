@@ -14,7 +14,8 @@
     "docs:typedoc:all": "npm run docs:typedoc && cd packages/query && npm run docs:build && cd ../swr && npm run docs:build && cd ../..",
     "docs:clean": "rm -rf docs/api",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test:testnet": "vitest run tests/integration/testnet"
   },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
